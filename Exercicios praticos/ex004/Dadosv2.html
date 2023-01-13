@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+</head>
+<body>
+    <h1>Trabalhando com dados v2.0</h1>
+
+    <button id="btn">Clique para começar!</button> <br/>
+
+    <div id="txt"></div>
+
+    <script>
+        let bt = document.getElementById('btn');
+        let tt = document.getElementById('txt');
+
+         bt.addEventListener('click', iniciar)
+
+         function iniciar() {
+            let nome = window.prompt('Qual seu nome?')
+            tt.innerHTML = (`Seja bem-vindo ${nome}`);  
+         }
+    </script>
+</body>
+</html>

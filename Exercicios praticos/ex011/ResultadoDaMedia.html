@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media em JS</title>
+
+    <style>
+        button {
+            padding: 30px;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        section {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Media do aluno v2.0</h1>
+    <br> <br>
+    <button id="btncalc" onclick="cal()">Calcular média</button>
+    <br> <br>
+
+    <section id="resm">O resultado da média ira aparecer aqui...</section>
+
+    <script>
+        let calc = document.querySelector('button#btncalc');
+        let med = document.querySelector('section#resm');
+
+        function cal() {
+            let nome = window.prompt('Qual o nome do aluno?');
+            let nota1 = Number(window.prompt(`Qual a primeira nota de ${nome}?`));
+            let nota2 = Number(window.prompt(`Qual a segunda nota de ${nome}?`));
+            media = (nota1 + nota2)/2
+
+            let txt
+            if(media >=6){
+                msg = 'Meus parabéns'
+            }
+            else {
+                msg = 'Estude um pouco mais!'
+            }
+
+            med.innerHTML += `<p>Calculando a nota final de ${nome}</p>`
+            med.innerHTML += `<p>As notas obtidas foram <mark>${nota1} e ${nota2}</mark></p>`
+            med.innerHTML += `<p>A média final de ${nome} será <mark>${media}</mark></p>`
+            med.innerHTML += `<p>A mensagem que temos é: ${msg}</p>`
+        }
+
+    </script>
+</body>
+</html>

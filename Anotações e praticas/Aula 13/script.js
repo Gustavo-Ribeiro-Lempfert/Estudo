@@ -1,6 +1,6 @@
 cont = 1
 
-while (cont <= 3){
+do {
     console.log(`passo ${cont}`)
-    cont++;
-}
+    cont++
+} while (cont <=4);
