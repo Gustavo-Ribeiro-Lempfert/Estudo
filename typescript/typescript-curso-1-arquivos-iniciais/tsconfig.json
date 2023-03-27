@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "outDir": "dist/js", //define diretorio para gravar osarquivos
+        "target": "ES6" //convert o codigo TS em EcmaScript 6
+    },
+    "include": ["app/**/*"]
+}
