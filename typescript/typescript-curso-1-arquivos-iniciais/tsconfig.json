@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "dist/js", //define diretorio para gravar osarquivos
+        "outDir": "app/dist/js", //define diretorio para gravar osarquivos
         "target": "ES6", //convert o codigo TS em EcmaScript 6
         "noEmitOnError": true, //Não emite um arquivo JS se houver erro na compilação
         "noImplicitAny": true // desativa o tipo inplícito ANY
