@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./segundo-componente.component.css']
 })
 export class SegundoComponenteComponent {
-
+  nome = 'joao';
+  dataNascimento = '1995-02-01';
 }
