@@ -1,0 +1,3 @@
+<label for="nome">Digite o nome: </label>
+<input type="text" [(ngModel)]="nome">
+<button type="button" (click)="mostraNome.emit(nome + ' ' + sobrenome)">Mostrar Nome</button>
