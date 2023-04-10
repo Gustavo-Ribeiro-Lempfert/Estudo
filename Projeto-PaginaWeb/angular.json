@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Roteamento-Angular": {
+    "Projeto-PaginaWeb": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/roteamento-angular",
+            "outputPath": "dist/projeto-pagina-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Roteamento-Angular:build:production"
+              "browserTarget": "Projeto-PaginaWeb:build:production"
             },
             "development": {
-              "browserTarget": "Roteamento-Angular:build:development"
+              "browserTarget": "Projeto-PaginaWeb:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Roteamento-Angular:build"
+            "browserTarget": "Projeto-PaginaWeb:build"
           }
         },
         "test": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e148b7c7-4d8c-48c2-8208-416bd92fdef1"
   }
 }

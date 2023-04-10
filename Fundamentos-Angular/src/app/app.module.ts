@@ -15,6 +15,9 @@ import { ComponenteFilhoComponent } from './componente-filho/componente-filho.co
 import { ComponentePaiComponent } from './componente-pai/componente-pai.component';
 import { Servicos1Component } from './servicos1/servicos1.component';
 import { CardComponent } from './card/card.component';
+import { SegundaPaginaComponent } from './segunda-pagina/segunda-pagina.component';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { CardComponent } from './card/card.component';
     ComponenteFilhoComponent,
     ComponentePaiComponent,
     Servicos1Component,
-    CardComponent
+    CardComponent,
+    SegundaPaginaComponent,
+    PaginaNaoEncontradaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
